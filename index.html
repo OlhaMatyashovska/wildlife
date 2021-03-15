@@ -5,19 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wildlife</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- 
+       add Roboto and Open Sans font styles
+       we will use links because of small size of a project and only because two numbers are needed
+    -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <div class="background">
         <header class="header">
             <div class="wrapper">
                 <div class="header__wrapper">
                     <div class="header_logo">
-                        <a href="/" class="header_logo__link">
+                        <div class="header_logo_svg">
                             <img src="./img/svg/path0.svg" alt="icon">
-                        </a>
-                        <a href="/" class="header_logo__link">
+                        </div>
+                        <h1 class="header_logo_text">
                             wildlife
-                        </a>
+                        </h1>                    
                     </div>
     
                     <nav class="header__nav">
@@ -32,15 +42,20 @@
                                     Contacts
                                 </a>
                             </li>
-                            <li class="header__item">
-                                <a href="#!" class="header__link">
-                                    <img src="./img/svg/Vector.svg" alt="icon">
-                                </a>
+                            <li class="header__item header__look">
+                                
+                                    <svg class="header__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.688 14.688C12.001 14.688 14.688 12 14.688 8.688C14.688 5.376 12 2.688 8.688 2.688C5.376 2.688 2.688 5.376 2.688 8.688C2.688 12 5.376 14.688 8.688 14.688ZM16.688 14.688L23.313 21.313L21.313 23.313L14.688 16.688V15.625L14.313 15.25C12.813 16.563 10.813 17.313 8.688 17.313C3.875 17.313 0 13.5 0 8.688C0 3.876 3.875 0 8.688 0C13.501 0 17.313 3.875 17.313 8.688C17.313 10.813 16.563 12.813 15.25 14.313L15.625 14.688H16.688Z"
+                                        fill="white" />
+                                </svg>
+                                
                             </li>
                             <li class="header__item">
-                                <a href="#!" class="header__link">
+                                
                                     <button type="submit" class="wildlife_button">Sign in</button>
-                                </a>
+                                
                             </li>
                         </ul>
                     </nav>
@@ -49,71 +64,83 @@
             </div>
         </header>
         <main class="main">
-            <section class="intro">
+            <section class="survival">
                 <div class="wrapper">
-                    <h1 class="intro__title">Survival</h1>
-                    <p class="intro__text">What this means is that we exist to help protect our environment and do in numbers of ways. You can save the planet by donation.</p>
-                    <button class="intro__button" type="submit">Donate</button>
+                    <h2 class="survival__title">Survival</h2>
+                    <p class="survival__text">What this means is that we exist to help protect our environment and do in numbers of ways. You can save the planet by donation.</p>
+                    <button class="survival__button" type="submit">Donate</button>
                 </div>
             </section>
+    </div>
+        
+        <div class="second_block__wrapper">
             <section class="articles">
-                <h1 class="main__title">Latest articles</h1>
-                <h2 class="main__subtitle">Breaking news from the wild</h2>
-                <section class="photo__collage">
-                    <div class="wrapper">
-                        <div class="photos">
-                            <div class="photo">
-                                <img src="./img/svg/left.svg" alt="left pointer">
-                            </div>
-                            <div class="animal">
-                                <img src="./img/deer.jpg" alt="deer">
-                                <div class="info">
-                                    <h4 class="animal__name">Deer</h4>
-                                <p class="animal__description">Naturalist investigation</p>
-                                </div>
-                            </div>
-                            <div class="animal">
-                                <img src="./img/squirrel.jpg" alt="squirrel"> 
-                                <div class="info">
-                                    <h4 class="animal__name">Squirrel</h4>
-                                    <p class="animal__description">Kamikaze squirrels</p>
-                                </div>
-                            </div>
-                            <div class="animal">
-                                <img src="./img/bird.jpg" alt="bird">
-                                <div class="info">
-                                    <h4 class="animal__name">Bird</h4>
-                                <p class="animal__description">Birds Fight club</p>
-                                </div>  
-                            </div>
-                            <div class="photo">
-                                <img src="./img/svg/right.svg" alt="right pointer">
-                            </div>
-                        </div>
+                <div class="content__wrap">
+                    <div class="articles__titles">
+                        <h2 class="art__title">Latest articles</h2>
+                        <h3 class="art__subtitle">Breaking news from the wild</h3>
                     </div>
-                </section>
-                <section class="form">
-                    <h2 class="heading">Get notified about new amazing articles</h2>
-                    <fieldset class="form_wrap">
-                        <p class="get-info__form">
-                            <input type="text" class="get-form__field" name="send-email" placeholder="Email">
-                            <button type="submit" class="get-form__submit">Send</button>
-                        </p>
-                    </fieldset>
-                </section> 
+                    <div class="cards">
+                        <a href="#!" class="link-left"><svg width="26" height="39" viewBox="0 0 26 39" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25.9913 3.24993C25.9913 3.56219 25.8125 3.91383 25.545 4.14844L8.00063 19.4998L25.545 34.8511C25.8131 35.0857 25.9913 35.4368 25.9913 35.7496C25.9913 36.0624 25.8125 36.4135 25.545 36.6481L23.3131 38.601C23.045 38.8356 22.6438 38.9915 22.2863 38.9915C21.9288 38.9915 21.5275 38.8351 21.2594 38.601L0.455627 20.3977C0.187502 20.1631 0.00937653 19.812 0.00937653 19.4992C0.00937653 19.1864 0.188127 18.8353 0.455627 18.6007L21.2594 0.397427C21.5275 0.162818 21.9288 0.00695801 22.2863 0.00695801C22.6438 0.00695801 23.045 0.163365 23.3131 0.397427L25.545 2.35032C25.8131 2.58493 25.9913 2.89719 25.9913 3.24883V3.24993Z"
+                                    fill="#666666" />
+                            </svg>
+                        </a>
+                        <figure class="card">
+                            <img src="./img/deer.jpg" alt="deer" class="card-picture">
+                            <h4 class="card-title deer-name">Deer</h4>
+                            <figcaption class="caption deer-caption">Naturalist investigation
+                            </figcaption>
+                        </figure>
+                        <figure class="card">
+                            <img src="./img/squirrel.jpg" alt="squirrel" class="card-picture">
+                            <h4 class="card-title squirrel-name">Squirrel</h4>
+                            <figcaption class="caption squirrel-caption">Kamikaze squirrels</figcaption>
+                        </figure>
+                        <figure class="card">
+                            <img src="./img/bird.jpg" alt="bird" class="card-picture">
+                            <h4 class="card-title bird-name">Bird</h4>
+                            <figcaption class="caption bird-caption">Birds Fight club</figcaption>
+                        </figure>
+                        <a href="#!" class="link-right"><svg width="30" height="39" viewBox="0 0 30 39" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M29.6512 19.4997C29.6512 19.812 29.4517 20.1636 29.1531 20.3982L5.93029 38.6015C5.63098 38.8361 5.18308 38.992 4.78401 38.992C4.38494 38.992 3.93703 38.8356 3.63773 38.6015L1.14633 36.6486C0.847031 36.414 0.648193 36.1017 0.648193 35.7501C0.648193 35.4378 0.847728 35.0862 1.14633 34.8516L20.7308 19.5003L1.14633 4.14894C0.847031 3.91433 0.648193 3.56323 0.648193 3.25042C0.648193 2.93761 0.847728 2.58651 1.14633 2.3519L3.63773 0.399014C3.93703 0.164405 4.38494 0.00854492 4.78401 0.00854492C5.18308 0.00854492 5.63098 0.164952 5.93029 0.399014L29.1531 18.6023C29.4524 18.8369 29.6512 19.188 29.6512 19.5008V19.4997Z"
+                                    fill="#666666" />
+                            </svg></a>
+                    </div>
+                </div>
             </section>
-            
-        </main>
+            <section class="get-notified">
+                <div class="get-notification__title-wrapper">
+                    <div class="get-notification__wrap">
+                        <h3 class="get-notification__title">Get notified about new amazing articles</h3>
+                    </div>
+                    <form action="/" class="search-form">
+                        <fieldset class="wrap-for-searchform">
+                            <p class="information">
+                                <input type="email" name="email" id="email" class="field"
+                                    placeholder="email" autocomplete="off">
+                                <input type="submit" value="send" class="submit">
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
         <footer class="footer">
           <div class="wrapper">
                 <div class="footer__blocks">
                     <div class="header_logo">
-                        <a href="/" class="header_logo__link">
+                        <div class="header_logo_svg">
                             <img src="./img/svg/path0.svg" alt="icon">
-                        </a>
-                        <a href="/" class="header_logo__link">
+                        </div>
+                        <h1 class="header_logo_text">
                             wildlife
-                        </a>
+                        </h1>                    
                     </div>
                     <nav class="footer__nav">
                         <ul class="footer__list">
@@ -134,30 +161,14 @@
                             </li>
                         </ul>
                     </nav>
-                    <nav class="icons">
-                        <ul class="icon__list">
-                            <li class="icon__item">
-                                <a href="#!" class="icon__link">
-                                    <img src="./img/svg/Frame.svg" alt="facebook logo">
-                                </a>
-                            </li>
-                            <li class="icon__item">
-                                <a href="#!" class="icon__link">
-                                    <img src="./img/svg/fr.svg" alt="logo">
-                                </a>
-                            </li>
-                            <li class="icon__item">
-                                <a href="#!" class="icon__link">
-                                    <img src="./img/svg/Frame (2).svg" alt="logo">
-                                </a>
-                            </li>
-                            <li class="icon__item">
-                                <a href="#!" class="icon__link">
-                                    <img src="./img/svg/Frame (1).svg" alt="telegaram logo">
-                                </a>
-                            </li>
-                        </ul>   
-                    </nav>
+                    <div class="contacts">
+                        <ul class="contacts-list">
+                            <li class="contact_item facebook"><a class="link" href="#!"></a></li>
+                            <li class="contact_item instagram"><a class="link" href="#!"></a></li>
+                            <li class="contact_item pinterest"><a class="link" href="#!"></a></li>
+                            <li class="contact_item telegram"> <a class="link" href="#!"></a></li>
+                        </ul>
+                    </div>
                 </div>
           </div>
         </footer>
